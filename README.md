@@ -245,3 +245,32 @@ SPIRAL MATRIX INSTRUCTIONS
     2. spiralMatrix([["a", "b", "c", "d"], ["l", "m", "n", "e"], ["k", "p", "o", "f"], ["j", "i", "h", "g"]]) should return ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p"].
     3. spiralMatrix([[true, false, false], [false, true, true], [false, true, false], [true, true, false]]) should return [true, false, false, true, false, false, true, true, false, false, true, true].
     4. spiralMatrix([[25, 24, 23, 22, 21], [10, 9, 8, 7, 20], [11, 2, 1, 6, 19], [12, 3, 4, 5, 18], [13, 14, 15, 16, 17]]) should return [25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1].
+
+NAME INITIALS INSTRUCTIONS
+
+    Given a full name as a string, return their initials.
+    
+    Names to initialize are separated by a space.
+    Initials should be made uppercase.
+    Initials should be separated by dots.
+    For example, "Tommy Millwood" returns "T.M.".
+    
+    Tests:
+    1. getInitials("Tommy Millwood") should return "T.M.".
+    2. getInitials("Savanna Puddlesplash") should return "S.P.".
+    3. getInitials("Frances Cowell Conrad") should return "F.C.C.".
+    4. getInitials("Dragon") should return "D.".
+    5. getInitials("Dorothy Vera Clump Haverstock Norris") should return "D.V.C.H.N.".
+
+LAST INITIAL INSTRUCTIONS
+
+    Given a string, return the letter from the string that appears last in the alphabet.
+    
+    If two or more letters tie for the last in the alphabet, return the first one.
+    Ignore all non-letter characters.
+    Tests:
+    1. getLastLetter("world") should return "w".
+    2. getLastLetter("Hello World") should return "W".
+    3. getLastLetter("The quick brown fox jumped over the lazy dog.") should return "z".
+    4. getLastLetter("HeLl0") should return "L".
+    5. getLastLetter("!#$ er@R asd fT.,> 2t0e9") should return "T".
