@@ -32,6 +32,7 @@ CAPITALIZED FIBONACCI INSTRUCTIONS
     5. capitalizeFibonacci("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar ex nibh, vel ullamcorper ligula egestas quis. Integer tincidunt fringilla accumsan. Integer et metus placerat, gravida felis at, pellentesque nisl.") should return "LOREm ipSum dOlor sit amet, consecTetur adipiscing elit. proin pulvinar ex nibh, vel ullaMcorper ligula egestas quis. integer tincidunt fringillA accumsan. integer et metus placerat, gravida felis at, pellentesque nisl."
 
 BROWSER HISTORY INSTRUCTIONS
+
     Given an array of browser commands, return an array with two values: the history as an array of URLs, and the index of the current page.
     
     Valid commands are:
@@ -50,6 +51,7 @@ BROWSER HISTORY INSTRUCTIONS
     6. getBrowserHistory(["example.com", "example.com/about", "Forward"]) should return [["example.com", "example.com/about"], 1].
 
 EQUATION VALIDATION INSTRUCTIONS
+
     Given a string representing a math equation, determine whether it is correct.
     
     The left side may contain up to three positive integers and the operators +, -, *, and /.
@@ -69,3 +71,51 @@ EQUATION VALIDATION INSTRUCTIONS
     9. isValidEquation("10 - 2 * 3 = 24") should return false.
     10. isValidEquation("3 + 9 / 3 = 4") should return false.
 
+ DIGIT ROTATION ESCAPE
+ 
+    Given a positive integer, determine if it, or any of its rotations, is evenly divisible by its digit count.
+    
+    A rotation means to move the first digit to the end. For example, after 1 rotation, 123 becomes 231.
+    
+    Check rotation 0 (the given number) first.
+    Given numbers won't contain any zeros.
+    Return the first rotation number if one is found, or "none" if not.
+    Tests:
+    1. getRotation(123) should return 0.
+    2. getRotation(13579) should return 3.
+    3. getRotation(24681) should return "none".
+    4. getRotation(84138789345) should return 6.
+
+WHAT DAY IS IT?
+
+    Menu
+    Profile
+    We have updated your personal informationClose
+    ×
+    Daily Coding Challenge
+    April 6, 2026
+    Instructions
+    script.jsEditor
+    JavaScript
+    Python
+    Console
+    What Day Is It?
+    Given a Unix timestamp in milliseconds, return the day of the week.
+    
+    Valid return days are:
+    
+    "Sunday"
+    "Monday"
+    "Tuesday"
+    "Wednesday"
+    "Thursday"
+    "Friday"
+    "Saturday"
+    Be sure to ignore time zones.
+    
+    Tests:
+    1. getDayOfWeek(1775492249000) should return "Monday".
+    2. getDayOfWeek(1766246400000) should return "Saturday".
+    3. getDayOfWeek(33791256000000) should return "Tuesday".
+    4. getDayOfWeek(1773576000000) should return "Sunday".
+    5. getDayOfWeek(0) should return "Thursday".
