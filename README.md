@@ -351,3 +351,35 @@ ARRAY SUM FINDER INSTRUCTIONS
     5. findSum([3, 1, 4, 1, 5, 9, 2, 6], 10) should return [3, 1, 4, 2].
     6. findSum([1, 2, 3, 4, 5, 6, 7, 8, 9], 20) should return [1, 2, 3, 5, 9].
     7. findSum([7, 9, 4, 2, 5], 10) should return "Sum not found".
+
+UNIQUE STAIR CLIMBER INSTRUCTIONS
+
+    Given a number of stairs, return how many distinct ways someone can climb them taking either 1 or 2 steps at a time.
+    
+    Tests:
+    1. getUniqueClimbs(4) should return 5.
+    2. getUniqueClimbs(5) should return 8.
+    3. getUniqueClimbs(10) should return 89.
+    4. getUniqueClimbs(18) should return 4181.
+    5. getUniqueClimbs(29) should return 832040.
+    6. getUniqueClimbs(50) should return 20365011074.
+
+ACRONYM FINDER INSTRUCTIONS
+
+    Given a string representing an acronym, return the full name of the organization it belongs to from the list below:
+    
+    "National Avocado Storage Authority"
+    "Cats Infiltration Agency"
+    "Fluffy Beanbag Inspectors"
+    "Department Of Jelly"
+    "Wild Honey Organization"
+    "Eating Pancakes Administration"
+    Each letter in the given acronym should match the first letter of each word in the organization it belongs to, in the same order.
+    
+    Tests:
+    1. findOrg("NASA") should return "National Avocado Storage Authority".
+    2. findOrg("CIA") should return "Cats Infiltration Agency".
+    3. findOrg("FBI") should return "Fluffy Beanbag Inspectors".
+    4. findOrg("DOJ") should return "Department Of Jelly".
+    5. findOrg("WHO") should return "Wild Honey Organization".
+6. findOrg("EPA") should return "Eating Pancakes Administration".
