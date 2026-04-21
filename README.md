@@ -274,3 +274,36 @@ LAST INITIAL INSTRUCTIONS
     3. getLastLetter("The quick brown fox jumped over the lazy dog.") should return "z".
     4. getLastLetter("HeLl0") should return "L".
     5. getLastLetter("!#$ er@R asd fT.,> 2t0e9") should return "T".
+
+SORTED ARRAY SWAP INSTRUCTIONS
+
+    Given an array of integers, return a new array using the following rules:
+    
+    Sort the integers in ascending order
+    Then swap all values whose index is a multiple of 3 with the value before it.
+    Tests:
+    1. sortAndSwap([3, 1, 2, 4, 6, 5]) should return [1, 2, 4, 3, 5, 6].
+    2. sortAndSwap([9, 7, 5, 3, 1, 2, 4, 6, 8]) should return [1, 2, 4, 3, 5, 7, 6, 8, 9].
+    3. sortAndSwap([1, 2, 3, 4, 5, 6, 7, 8, 9]) should return [1, 2, 4, 3, 5, 7, 6, 8, 9].
+    4. sortAndSwap([12, 5, 8, 1, 3, 10, 2, 7, 6, 4, 9, 11]) should return [1, 2, 4, 3, 5, 7, 6, 8, 10, 9, 11, 12].
+    5. sortAndSwap([100, -50, 0, 75, -25, 50, -75, 25]) should return [-75, -50, 0, -25, 25, 75, 50, 100].
+    6. sortAndSwap([5, 9, 13, 77, 88, 313, -10, -65, 0, 8, 99, 101, -4, 2]) should return [-65, -10, 0, -4, 2, 8, 5, 9, 77, 13, 88, 101, 99, 313].
+
+STRING MATH INSTRUCTIONS
+
+    Given a string with numbers and other characters, perform math on the numbers based on the count of non-digit characters between the numbers.
+    
+    If the count of characters separating two numbers is even, use addition.
+    If it's odd, use subtraction.
+    Consecutive digits form a single number.
+    Operations are applied left to right.
+    Ignore leading and trailing characters that aren't digits.
+    For example, given "3ab10c8", return 5. Add 3 and 10 to get 13 because there's an even number of characters between them. Then subtract 8 from 13 because there's an odd number of characters between the result and 8.
+    
+    Tests:
+    1. doMath("3ab10c8") should return 5.
+    2. doMath("6MINUS4") should return 2.
+    3. doMath("9plus3") should return 12.
+    4. doMath("5fkwo#10i#%.<>15P=@20!#B/25") should return 15.
+    5. doMath("a.67,1$lk6ldf34@#LD@]2d32d2'2l3,@l3L#@2gh35s09if=df#$t9sm49t0df3$^%[vc;:0:4mt") should return 67.
+    
