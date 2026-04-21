@@ -151,3 +151,46 @@ FIZZBUZZ VALIDATOR INSTRUCTIONS
     5. isFizzBuzz([1, 2, "Fizz", "Buzz", 5]) should return false.
     6. isFizzBuzz([97, 98, "Buzz", "Fizz", 101, "Fizz", 103]) should return false.
     7. isFizzBuzz(["Fizz", "Buzz", 101, "Fizz", 103, 104, "FizzBuzz"]) should return true.
+
+NEXT BINGO NUMBER INSTRUCTIONS
+
+    Given a bingo number, return the next bingo number sequentially.
+    
+    A bingo number is a single letter followed by a number in its range according to this chart:
+    
+    Letter	Number Range
+    "B"	1-15
+    "I"	16-30
+    "N"	31-45
+    "G"	46-60
+    "O"	61-75
+    For example, given "B10", return "B11", the next bingo number. If given the last bingo number, return "B1".
+    
+    Tests:
+    1. getNextBingoNumber("B10") should return "B11".
+    2. getNextBingoNumber("N33") should return "N34".
+    3. getNextBingoNumber("I30") should return "N31".
+    4. getNextBingoNumber("G60") should return "O61".
+    5. getNextBingoNumber("O75") should return "B1".
+
+ROOK ATTACK INSTRUCTIONS
+
+    Given two strings for the location of two rooks on a chess board, determine if they can attack each other.
+    
+    A standard chessboard is 8x8, with columns labeled A through H (left to right) and rows labeled 1 through 8 (bottom to top). It looks like this:
+    
+    A8	B8	C8	D8	E8	F8	G8	H8
+    A7	B7	C7	D7	E7	F7	G7	H7
+    A6	B6	C6	D6	E6	F6	G6	H6
+    A5	B5	C5	D5	E5	F5	G5	H5
+    A4	B4	C4	D4	E4	F4	G4	H4
+    A3	B3	C3	D3	E3	F3	G3	H3
+    A2	B2	C2	D2	E2	F2	G2	H2
+    A1	B1	C1	D1	E1	F1	G1	H1
+    Rooks can move as many squares as they want in a horizontal or vertical direction. So if they are on the same row or column, they can attack each other.
+    
+    Tests:
+    Waiting:1. rookAttack("A1", "A8") should return true.
+    Waiting:2. rookAttack("B4", "F4") should return true.
+    Waiting:3. rookAttack("E3", "D4") should return false.
+    Waiting:4. rookAttack("H7", "F6") should return false.
